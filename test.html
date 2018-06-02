@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>grid test</title>
+    <style>
+.wrapper1 {
+    display:grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    grid-auto-rows: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    border: 1px pink solid;
+
+}
+
+.box1{
+    line-height: 3em;
+    grid-column: 1/4;
+    grid-row: 1;
+    align-self: stretch; /*options: (start, end, center, stretch)*/
+    justify-self: stretch; /*options: (start, end, center, stretch)*/
+    z-index: -1;
+    background: #b2cbe3; /* sky blue*/
+
+}
+
+.box2{
+    grid-column: 1/4;
+    grid-row: 2;
+    z-index: 0;
+    align-self: stretch; /*options: (start, end, center, stretch)*/
+    justify-self: stretch; /*options: (start, end, center, stretch)*/
+    background: #d0d5deff; /* Pale Blue*/
+
+}
+.box3{
+    grid-column: 1/4;
+    grid-row: 3;
+    z-index: 0;
+    align-self: stretch; /*options: (start, end, center, stretch)*/
+    justify-self: stretch; /*options: (start, end, center, stretch)*/
+    background: #d7dae4ff; /* Snow*/
+}
+
+.box4{
+    grid-column: 1/4;
+    grid-row: 4;
+    z-index: 0;
+    align-self: stretch; /*options: (start, end, center, stretch)*/
+    justify-self: stretch; /*options: (start, end, center, stretch)*/
+    background: #616172ff; /* Craggy Gray*/
+}
+
+.box5{
+    grid-column: 1/4;
+    grid-row: 5;
+    z-index: 0;
+    align-self: stretch; /*options: (start, end, center, stretch)*/
+    justify-self: stretch; /*options: (start, end, center, stretch)*/
+    background: #9592a2ff; /* Talus Gray*/
+}
+
+.box6{
+    grid-column: 1/4;
+    grid-row: 6;
+    z-index: 0;
+    align-self: stretch; /*options: (start, end, center, stretch)*/
+    justify-self: stretch; /*options: (start, end, center, stretch)*/
+    background: #6e544aff; /* Talus Brown*/
+}
+
+.box7{
+    grid-column: 1/4;
+    grid-row: 7;
+    z-index: 0;
+    align-self: stretch; /*options: (start, end, center, stretch)*/
+    justify-self: stretch; /*options: (start, end, center, stretch)*/
+    background: #8e321fff; /* red*/
+}
+.box8{
+    grid-column: 1/4;
+    grid-row: 8;
+    z-index: 0;
+    align-self: stretch; /*options: (start, end, center, stretch)*/
+    justify-self: stretch; /*options: (start, end, center, stretch)*/
+    background: #cc562fff; /*orange*/
+}
+.box9{
+    grid-column: 1/4;
+    grid-row: 9;
+    z-index: 0;
+    align-self: stretch; /*options: (start, end, center, stretch)*/
+    justify-self: stretch; /*options: (start, end, center, stretch)*/
+    background: #8d8444ff; /*grassy green*/
+}
+.box10{
+    grid-column: 1/4;
+    grid-row: 10;
+    z-index: 0;
+    align-self: stretch; /*options: (start, end, center, stretch)*/
+    justify-self: stretch; /*options: (start, end, center, stretch)*/
+    background: #3e3230ff; /*evergreen*/
+}
+.nested{
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+
+}
+
+    </style>
+<head>
+    <body>
+        <h1>Mountain</h1>
+        <div class="wrapper1">
+
+            <div class="box1">
+                <h3>Sky blue</h3>
+                <div class='nested'>
+                    <div style="color:#b2cbe3;font-size:55px;"">sky blue (#b2cbe3) </div>
+                    <div style="color:#d0d5deff;font-size:55px;">pale blue (#d0d5deff) </div>
+                    <div style="color:#d7dae4ff;font-size:55px;">snow (#d7dae4ff) </div>
+                    <div style="color:#616172ff;font-size:55px;"">craggy gray (#616172ff) </div>
+                    <div style="color:#9592a2ff;font-size:55px;"">talus gray (#9592a2ff) </div>
+                    <div style="color:#6e544aff;font-size:55px;"">talus brown (#6e544aff) </div>
+                    <div style="color:#8e321fff;font-size:55px;"">reds (#8e321fff) </div>
+                    <div style="color:#cc562fff;font-size:55px;"">oranges (#cc562fff) </div>
+                    <div style="color:#8d8444ff;font-size:55px;"">grassy green (#8d8444ff) </div>
+                    <div style="color:#3e3230ff;font-size:55px;"">ever green (#3e3230ff) </div>
+                 </div>
+             </div>
+            <div class="box2">
+                <h3>Pale blue</h3>
+                <div class='nested'>
+                    <div style="color:#b2cbe3;font-size:55px;"">sky blue (#b2cbe3) </div>
+                    <div style="color:#d0d5deff;font-size:55px;">pale blue (#d0d5deff) </div>
+                    <div style="color:#d7dae4ff;font-size:55px;">snow (#d7dae4ff) </div>
+                    <div style="color:#616172ff;font-size:55px;"">craggy gray (#616172ff) </div>
+                    <div style="color:#9592a2ff;font-size:55px;"">talus gray (#9592a2ff) </div>
+                    <div style="color:#6e544aff;font-size:55px;"">talus brown (#6e544aff) </div>
+                    <div style="color:#8e321fff;font-size:55px;"">reds (#8e321fff) </div>
+                    <div style="color:#cc562fff;font-size:55px;"">oranges (#cc562fff) </div>
+                    <div style="color:#8d8444ff;font-size:55px;"">grassy green (#8d8444ff) </div>
+                    <div style="color:#3e3230ff;font-size:55px;"">ever green (#3e3230ff) </div>
+                </div>
+            </div>
+            <div class="box3">
+                <h3>snow</h3>
+                <div class='nested'>
+                    <div style="color:#b2cbe3;font-size:55px;"">sky blue (#b2cbe3) </div>
+                    <div style="color:#d0d5deff;font-size:55px;">pale blue (#d0d5deff) </div>
+                    <div style="color:#d7dae4ff;font-size:55px;">snow (#d7dae4ff) </div>
+                    <div style="color:#616172ff;font-size:55px;"">craggy gray (#616172ff) </div>
+                    <div style="color:#9592a2ff;font-size:55px;"">talus gray (#9592a2ff) </div>
+                    <div style="color:#6e544aff;font-size:55px;"">talus brown (#6e544aff) </div>
+                    <div style="color:#8e321fff;font-size:55px;"">reds (#8e321fff) </div>
+                    <div style="color:#cc562fff;font-size:55px;"">oranges (#cc562fff) </div>
+                    <div style="color:#8d8444ff;font-size:55px;"">grassy green (#8d8444ff) </div>
+                    <div style="color:#3e3230ff;font-size:55px;"">ever green (#3e3230ff) </div>
+                 </div>
+             </div>
+            <div class="box4">
+                <h3>craggy gray</h3>
+                <div class='nested'>
+                    <div style="color:#b2cbe3;font-size:55px;"">sky blue (#b2cbe3) </div>
+                    <div style="color:#d0d5deff;font-size:55px;">pale blue (#d0d5deff) </div>
+                    <div style="color:#d7dae4ff;font-size:55px;">snow (#d7dae4ff) </div>
+                    <div style="color:#616172ff;font-size:55px;"">craggy gray (#616172ff) </div>
+                    <div style="color:#9592a2ff;font-size:55px;"">talus gray (#9592a2ff) </div>
+                    <div style="color:#6e544aff;font-size:55px;"">talus brown (#6e544aff) </div>
+                    <div style="color:#8e321fff;font-size:55px;"">reds (#8e321fff) </div>
+                    <div style="color:#cc562fff;font-size:55px;"">oranges (#cc562fff) </div>
+                    <div style="color:#8d8444ff;font-size:55px;"">grassy green (#8d8444ff) </div>
+                    <div style="color:#3e3230ff;font-size:55px;"">ever green (#3e3230ff) </div>
+                </div>
+            </div>
+            <div class="box5">
+                <h3>talus gray</h3>
+                <div class='nested'>
+                    <div style="color:#b2cbe3;font-size:55px;"">sky blue (#b2cbe3) </div>
+                    <div style="color:#d0d5deff;font-size:55px;">pale blue (#d0d5deff) </div>
+                    <div style="color:#d7dae4ff;font-size:55px;">snow (#d7dae4ff) </div>
+                    <div style="color:#616172ff;font-size:55px;"">craggy gray (#616172ff) </div>
+                    <div style="color:#9592a2ff;font-size:55px;"">talus gray (#9592a2ff) </div>
+                    <div style="color:#6e544aff;font-size:55px;"">talus brown (#6e544aff) </div>
+                    <div style="color:#8e321fff;font-size:55px;"">reds (#8e321fff) </div>
+                    <div style="color:#cc562fff;font-size:55px;"">oranges (#cc562fff) </div>
+                    <div style="color:#8d8444ff;font-size:55px;"">grassy green (#8d8444ff) </div>
+                    <div style="color:#3e3230ff;font-size:55px;"">ever green (#3e3230ff) </div>
+                </div>
+            </div>
+            <div class="box6">
+                <h3>talus brown</h3>
+                <div class='nested'>
+                    <div style="color:#b2cbe3;font-size:55px;"">sky blue (#b2cbe3) </div>
+                    <div style="color:#d0d5deff;font-size:55px;">pale blue (#d0d5deff) </div>
+                    <div style="color:#d7dae4ff;font-size:55px;">snow (#d7dae4ff) </div>
+                    <div style="color:#616172ff;font-size:55px;"">craggy gray (#616172ff) </div>
+                    <div style="color:#9592a2ff;font-size:55px;"">talus gray (#9592a2ff) </div>
+                    <div style="color:#6e544aff;font-size:55px;"">talus brown (#6e544aff) </div>
+                    <div style="color:#8e321fff;font-size:55px;"">reds (#8e321fff) </div>
+                    <div style="color:#cc562fff;font-size:55px;"">oranges (#cc562fff) </div>
+                    <div style="color:#8d8444ff;font-size:55px;"">grassy green (#8d8444ff) </div>
+                    <div style="color:#3e3230ff;font-size:55px;"">ever green (#3e3230ff) </div>
+                </div>
+            </div>
+            <div class="box7">
+                <h3>red</h3>
+                <div class='nested'>
+                    <div style="color:#b2cbe3;font-size:55px;"">sky blue (#b2cbe3) </div>
+                    <div style="color:#d0d5deff;font-size:55px;">pale blue (#d0d5deff) </div>
+                    <div style="color:#d7dae4ff;font-size:55px;">snow (#d7dae4ff) </div>
+                    <div style="color:#616172ff;font-size:55px;"">craggy gray (#616172ff) </div>
+                    <div style="color:#9592a2ff;font-size:55px;"">talus gray (#9592a2ff) </div>
+                    <div style="color:#6e544aff;font-size:55px;"">talus brown (#6e544aff) </div>
+                    <div style="color:#8e321fff;font-size:55px;"">reds (#8e321fff) </div>
+                    <div style="color:#cc562fff;font-size:55px;"">oranges (#cc562fff) </div>
+                    <div style="color:#8d8444ff;font-size:55px;"">grassy green (#8d8444ff) </div>
+                    <div style="color:#3e3230ff;font-size:55px;"">ever green (#3e3230ff) </div>
+                </div>
+            </div>
+            <div class="box8">
+                <h3>orange</h3>
+                <div class='nested'>
+                    <div style="color:#b2cbe3;font-size:55px;"">sky blue (#b2cbe3) </div>
+                    <div style="color:#d0d5deff;font-size:55px;">pale blue (#d0d5deff) </div>
+                    <div style="color:#d7dae4ff;font-size:55px;">snow (#d7dae4ff) </div>
+                    <div style="color:#616172ff;font-size:55px;"">craggy gray (#616172ff) </div>
+                    <div style="color:#9592a2ff;font-size:55px;"">talus gray (#9592a2ff) </div>
+                    <div style="color:#6e544aff;font-size:55px;"">talus brown (#6e544aff) </div>
+                    <div style="color:#8e321fff;font-size:55px;"">reds (#8e321fff) </div>
+                    <div style="color:#cc562fff;font-size:55px;"">oranges (#cc562fff) </div>
+                    <div style="color:#8d8444ff;font-size:55px;"">grassy green (#8d8444ff) </div>
+                    <div style="color:#3e3230ff;font-size:55px;"">ever green (#3e3230ff) </div>
+                </div>
+            </div>
+            <div class="box9">
+                <h3>grassy green</h3>
+                <div class='nested'>
+                    <div style="color:#b2cbe3;font-size:55px;"">sky blue (#b2cbe3) </div>
+                    <div style="color:#d0d5deff;font-size:55px;">pale blue (#d0d5deff) </div>
+                    <div style="color:#d7dae4ff;font-size:55px;">snow (#d7dae4ff) </div>
+                    <div style="color:#616172ff;font-size:55px;"">craggy gray (#616172ff) </div>
+                    <div style="color:#9592a2ff;font-size:55px;"">talus gray (#9592a2ff) </div>
+                    <div style="color:#6e544aff;font-size:55px;"">talus brown (#6e544aff) </div>
+                    <div style="color:#8e321fff;font-size:55px;"">reds (#8e321fff) </div>
+                    <div style="color:#cc562fff;font-size:55px;"">oranges (#cc562fff) </div>
+                    <div style="color:#8d8444ff;font-size:55px;"">grassy green (#8d8444ff) </div>
+                    <div style="color:#3e3230ff;font-size:55px;"">ever green (#3e3230ff) </div>
+                </div>
+            </div>
+            <div class="box10">
+                <h3>ever green</h3>
+                <div class='nested'>
+                    <div style="color:#b2cbe3;font-size:55px;"">sky blue (#b2cbe3) </div>
+                    <div style="color:#d0d5deff;font-size:55px;">pale blue (#d0d5deff) </div>
+                    <div style="color:#d7dae4ff;font-size:55px;">snow (#d7dae4ff) </div>
+                    <div style="color:#616172ff;font-size:55px;"">craggy gray (#616172ff) </div>
+                    <div style="color:#9592a2ff;font-size:55px;"">talus gray (#9592a2ff) </div>
+                    <div style="color:#6e544aff;font-size:55px;"">talus brown (#6e544aff) </div>
+                    <div style="color:#8e321fff;font-size:55px;"">reds (#8e321fff) </div>
+                    <div style="color:#cc562fff;font-size:55px;"">oranges (#cc562fff) </div>
+                    <div style="color:#8d8444ff;font-size:55px;"">grassy green (#8d8444ff) </div>
+                    <div style="color:#3e3230ff;font-size:55px;"">ever green (#3e3230ff) </div>
+                </div>
+            </div>
+    </body>
